@@ -1,0 +1,380 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*
+ * HEADER
+ */
+.header {
+  width: 100%;
+  background-color: white;
+}
+/* Wrapping element for .header__logo , .header__menu and header__menu-icon*/
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 150px;
+}
+.header__logo {
+  padding: 25px 0px;
+}
+/* Wrapping element for .header__list*/
+.header__menu {
+  padding: 50px 0px;
+}
+/* Wrapping element for .header__item*/
+.header__list {
+  text-align: right;
+  list-style: none;
+}
+/* Wrapping element for .header__link*/
+.header__item {
+  display: inline;
+  padding-left: 60px;
+}
+.header__link {
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  color: #333333;
+}
+.header__checkbox {
+  display: none;
+}
+.header__menu-icon {
+  display: none;
+}
+
+/*
+ * MAIN CONTENT
+ */
+
+/* Wrapping element for .intro, .about, .project, .contacts*/
+.container {
+  width: 100%;
+}
+
+/*
+ * INTRO SECTION
+ */
+
+/* Wrapping element for .intro__img, .intro__line*/
+.intro {
+  width: 100%;
+}
+.intro__img {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  background: url(images/hero-banner.jpg) no-repeat center;
+  background-size: cover;
+}
+
+/* Wrapping element for .intro__heading, .intro__desc*/
+.intro__line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  text-align: center;
+}
+.intro__desc {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+/*
+ * ABOUT SECTION
+ */
+
+/* Wrapping element for .about__heading, .about__desc*/
+.about {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  padding: 100px 150px;
+}
+.about__heading {
+  font-size: 36px;
+  font-weight: 800;
+}
+/* Wrapping element for .about--btn */
+.about__desc {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.6;
+  color: #333333;
+}
+
+/*
+ * ALL BUTTONS COMMON
+ */
+.btn {
+  margin-top: 30px;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid #333333;
+  border-radius: 4px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+/*
+ * PROJECT SECTION
+ */
+
+/* Wrapping element for .project__heading and .project__gallery */
+.project {
+  width: 100%;
+  padding: 100px 150px;
+  text-align: center;
+  background-color: rgb(247, 247, 247);
+}
+.project__heading {
+  font-size: 36px;
+}
+
+/* Wrapping element for .project__img and .project--btn */
+.project__gallery {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 34px;
+  margin: 50px 0px;
+}
+.project__img {
+  width: 100%;
+}
+
+/* Project Button */
+.project--btn {
+  margin: 0px;
+}
+.project--btn:hover {
+  background: #333333;
+  color: #ffffff;
+}
+
+/*
+ * CONTACTS SECTION
+ */
+
+/* Wrapping element for .contacts__heading, .contacts__desc and .contacts__social */
+.contacts {
+  padding: 100px 150px;
+  text-align: center;
+}
+.contacts__heading {
+  margin-bottom: 34px;
+  font-size: 36px;
+  font-weight: 600;
+}
+.contacts__desc {
+  margin-bottom: 34px;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: italic;
+}
+/* Wrapping element for .contacts__social-icon */
+.contacts__social-icon {
+  padding: 0px 10px;
+}
+
+/* Break line */
+.line {
+  border: 1px solid rgb(247, 247, 247);
+}
+
+/*
+ * FOOTER
+ */
+
+.footer {
+  padding: 45px 150px;
+}
+
+/* --------------MOBILE RESPONSIVE DESIGN------------*/
+
+/* Media query for devices upto 768px width */
+@media (max-width: 768px) {
+  /*
+ * HEADER
+ */
+
+  /* Wrapping element for .header__logo , .header__menu and header__menu-icon*/
+  .header__wrap {
+    padding: 0px;
+  }
+  .header__logo {
+    width: 200px;
+    height: 110px;
+    padding: 25px 0px;
+    margin-left: 30px;
+  }
+
+  /* Wrapping element for .header__list*/
+  .header__menu {
+    position: absolute;
+    top: 90px;
+    left: -1000px;
+    z-index: 1;
+    width: 100%;
+    padding: 0px 30px;
+    margin: 0px;
+    background-color: #ffffff;
+  }
+  .header__menu-icon {
+    display: block;
+    margin: 35px 30px;
+    padding: 5px 10px;
+    font-size: 22px;
+    color: #111111;
+    border: solid 2px black;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  /* Wrapping element for .header__item*/
+  .header__list {
+    display: block;
+    width: 100%;
+    margin: 0px;
+    padding-top: 50px;
+    text-align: left;
+  }
+
+  /* Wrapping element for .header__link*/
+  .header__item {
+    display: block;
+    padding: 0px;
+    margin: 0px;
+  }
+  .header__link {
+    display: block;
+    padding-bottom: 25px;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    color: #333333;
+  }
+  /* ------------To show menu on clicking bars icon-------- */
+  #checkbox:checked ~ .header__menu {
+    left: 0;
+    max-height: 250px;
+    transition: all 0.5s;
+  }
+
+  /*
+ * INTRO SECTION
+ */
+
+  .intro__img {
+    height: 400px;
+  }
+  /* Wrapping element for .intro__heading, .intro__desc*/
+  .intro__line {
+    width: 100%;
+    font-size: 30px;
+  }
+  .intro__heading {
+    font-size: 48px;
+  }
+
+  /*
+ * ABOUT SECTION
+ */
+
+  /* Wrapping element for .about__heading, .about__desc*/
+  .about {
+    display: block;
+    margin: 50px 0px;
+    padding: 0px;
+    text-align: center;
+  }
+  .about__heading {
+    margin: 0px 0px 10px;
+  }
+
+  /* Wrapping element for .about--btn */
+  .about__desc {
+    width: 100%;
+    margin: 0px;
+    padding: 0px 30px;
+  }
+
+  /*
+ * ALL BUTTONS COMMON
+ */
+
+  .btn {
+    padding: 20px 40px;
+  }
+
+  /*
+ * PROJECT SECTION
+ */
+
+  /* Wrapping element for .project__heading and .project__gallery */
+  .project {
+    width: 100%;
+    padding: 50px 30px;
+    text-align: center;
+    background-color: rgb(241, 242, 243);
+  }
+  .project__heading {
+    font-size: 36px;
+  }
+
+  /* Wrapping element for .project__img and .project--btn */
+  .project__gallery {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    margin: 30px 0px;
+  }
+  .project__img {
+    width: 100%;
+  }
+
+  /* Project Button */
+  .project--btn {
+    margin-bottom: 0px;
+  }
+
+  /*
+ * CONTACTS SECTION
+ */
+
+  /* Wrapping element for .contacts__heading, .contacts__desc and .contacts__social */
+  .contacts {
+    padding: 50px 30px;
+  }
+  .contacts__heading {
+    font-size: 48px;
+  }
+
+  /*
+ * FOOTER
+ */
+  .footer {
+    padding: 50px;
+    margin-left: 0px;
+    text-align: center;
+  }
+}
+
+/* ------------MOBILE RESPONSIVE END-------- */

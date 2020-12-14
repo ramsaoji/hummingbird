@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__wrap">
+        <!-- Portfolio Logo -->
+        <img class="header__logo" src="images/logo.png" alt="logo" />
+        <!-- Input for checkbox -->
+        <input class="header__checkbox" id="checkbox" type="checkbox" />
+
+        <!-- Header Menu Navigation-bar -->
+        <nav class="header__menu">
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link" href="#home">Home</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#about">About</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#projects">Work</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#contacts">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Header Menu-Icon -->
+        <label class="header__menu-icon" for="checkbox">
+          <i class="fa fa-bars"></i>
+        </label>
+      </div>
+    </header>
+
+    <!-- Main Content Start -->
+    <main class="container">
+      <!-- Intro Image Section -->
+      <section class="intro" id="home">
+        <!-- Intro Image -->
+        <div class="intro__img">
+          <!-- Intro Line Div -->
+          <div class="intro__line">
+            <!-- Intro Heading -->
+            <h1 class="intro__heading">Hey, I am John</h1>
+            <!-- Intro Decription -->
+            <span class="intro__desc">a web developer</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about" id="about">
+        <!-- About Heading -->
+        <h2 class="about__heading">About Us</h2>
+        <!-- About Decription -->
+        <p class="about__desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab unde est
+          odio totam necessitatibus ipsam animi repellat nostrum Beatae corporis
+          eveniet veritatis, non nemo odio exercitationem provident id.<br /><br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <br />
+          <!-- Button in about section -->
+          <span class="about__paragraph-span">
+            <button class="btn about--btn" id="submit" value="Read More">
+              Read More
+            </button>
+          </span>
+        </p>
+      </section>
+
+      <!-- Project Section -->
+      <section class="project" id="work">
+        <!-- Project Heading -->
+        <h2 class="project__heading">These are some of my projects.</h2>
+        <!-- Project Photo Gallery -->
+        <div class="project__gallery">
+          <img
+            class="project__img"
+            src="images/assignment_05.jpg"
+            alt="mountain-img"
+          />
+          <img
+            class="project__img"
+            src="images/assignment_08.jpg"
+            alt="mountain-img"
+          />
+          <img
+            class="project__img"
+            src="images/assignment_10.jpg"
+            alt="mountain-img"
+          />
+          <img
+            class="project__img"
+            src="images/assignment_16.jpg"
+            alt="mountain-img"
+          />
+          <img
+            class="project__img"
+            src="images/assignment_17.jpg"
+            alt="mountain-img"
+          />
+          <img
+            class="project__img"
+            src="images/assignment_18.jpg"
+            alt="mountain-img"
+          />
+        </div>
+        <!-- Button in Project Section -->
+        <button class="btn project--btn" value="Read More">Show All</button>
+      </section>
+
+      <!-- Contacts Section -->
+      <section class="contacts" id="contacts">
+        <!-- Contacts Heading -->
+        <h2 class="contacts__heading">Let's work together...</h2>
+        <!-- Contacts Description -->
+        <p class="contacts__desc">How do you take your coffee?</p>
+        <!-- Social Media - icons -->
+        <div class="contacts__social">
+          <img
+            class="contacts__social-icon"
+            src="images/facebook-icon.png"
+            alt="facebook"
+          />
+          <img
+            class="contacts__social-icon"
+            src="images/twitter-icon.png"
+            alt="twitter"
+          />
+          <img
+            class="contacts__social-icon"
+            src="images/instagram-icon.png"
+            alt="instagram"
+          />
+        </div>
+      </section>
+    </main>
+    <!-- Main Content End -->
+
+    <!-- Footer Section Seperation Line -->
+    <hr class="line" />
+
+    <!-- Footer Section -->
+    <footer class="footer">copyright @2020</footer>
+  </body>
+</html>
