@@ -206,12 +206,69 @@ body {
   padding: 45px 150px;
 }
 
+/* --------------TABLET RESPONSIVE DESIGN------------*/
+
+@media (max-width: 1023px) {
+  /*
+ * HEADER TABLET
+ */
+
+  /* Wrapping element for .header__logo , .header__menu and header__menu-icon*/
+  .header__wrap {
+    padding: 0px 50px;
+  }
+  /* Wrapping element for .header__link*/
+  .header__item {
+    padding: 0px 0px 0px 40px;
+    margin: 0px;
+  }
+
+  /*
+ * ABOUT SECTION TABLET
+ */
+
+  /* Wrapping element for .about__heading, .about__desc*/
+  .about {
+    padding: 100px 50px;
+  }
+
+  /*
+ * PROJECT SECTION TABLET
+ */
+
+  /* Wrapping element for .project__heading and .project__gallery */
+  .project {
+    padding: 100px 50px;
+  }
+  /* Wrapping element for .project__img and .project--btn */
+  .project__gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /*
+ * CONTACTS SECTION TABLET
+ */
+
+  /* Wrapping element for .contacts__heading, .contacts__desc and .contacts__social */
+  .contacts {
+    padding: 100px 50px;
+  }
+
+  /*
+ * FOOTER TABLET
+ */
+
+  .footer {
+    padding: 45px 50px;
+  }
+}
+
 /* --------------MOBILE RESPONSIVE DESIGN------------*/
 
 /* Media query for devices upto 768px width */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   /*
- * HEADER
+ * HEADER MOBILE
  */
 
   /* Wrapping element for .header__logo , .header__menu and header__menu-icon*/
@@ -279,7 +336,7 @@ body {
   }
 
   /*
- * INTRO SECTION
+ * INTRO SECTION MOBILE
  */
 
   .intro__img {
@@ -295,7 +352,7 @@ body {
   }
 
   /*
- * ABOUT SECTION
+ * ABOUT SECTION MOBILE
  */
 
   /* Wrapping element for .about__heading, .about__desc*/
@@ -317,7 +374,7 @@ body {
   }
 
   /*
- * ALL BUTTONS COMMON
+ * ALL BUTTONS COMMON MOBILE
  */
 
   .btn {
@@ -325,7 +382,7 @@ body {
   }
 
   /*
- * PROJECT SECTION
+ * PROJECT SECTION MOBILE
  */
 
   /* Wrapping element for .project__heading and .project__gallery */
@@ -356,7 +413,7 @@ body {
   }
 
   /*
- * CONTACTS SECTION
+ * CONTACTS SECTION MOBILE
  */
 
   /* Wrapping element for .contacts__heading, .contacts__desc and .contacts__social */
@@ -368,7 +425,7 @@ body {
   }
 
   /*
- * FOOTER
+ * FOOTER MOBILE
  */
   .footer {
     padding: 50px;
